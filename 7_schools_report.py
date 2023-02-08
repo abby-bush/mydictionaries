@@ -32,7 +32,7 @@ print(type(schools))
 # How many schools are in this file?
 print(len(schools))
 
-# Displaying school reports
+# School report - women's graduation rate
 for school in schools:
     if school["NCAA"]["NAIA conference number football (IC2020)"] in conference_schools:
         if school["Graduation rate  women (DRVGR2020)"] > 80:
@@ -41,6 +41,11 @@ for school in schools:
                 f"""Graduation rate for women: {school["Graduation rate  women (DRVGR2020)"]}"""
             )
 
+print()
+
+# School report - total price for in-state students living off campus
+for school in schools:
+    if school["NCAA"]["NAIA conference number football (IC2020)"] in conference_schools:
         if (
             school[
                 "Total price for in-state students living off campus (not with family)  2020-21 (DRVIC2020)"
@@ -52,6 +57,9 @@ for school in schools:
                 ]
                 > 50000
             ):
+                print(f"""\n{school["instnm"]}""")
                 print(
                     f"""Total price for in-state students living off campus: {school["Total price for in-state students living off campus (not with family)  2020-21 (DRVIC2020)"]}"""
                 )
+
+print()
