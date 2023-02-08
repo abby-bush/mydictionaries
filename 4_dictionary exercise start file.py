@@ -93,13 +93,12 @@ def deal_cards(deck, number):
         number = len(deck)
 
     # assuming that if they ask for higher than 52, they want the highest value
-    """
+
     # Deal the cards and accumulate their values.
     # this is how to do it with pop.item if it worked. this code pops out the last items in the dictionary
-    for num in range(number):
-        card, value = deck.popitem()
-        print(card)
-    """
+    # for num in range(number):
+    # card, value = deck.popitem()
+    # print(card)
 
     # doing it randomly
     for num in range(number):
