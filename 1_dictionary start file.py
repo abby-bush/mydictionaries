@@ -46,6 +46,7 @@ print()
 print("*****  start section 3 - edit/append dictionary ********")
 print()
 
+
 print(phonebook)
 
 phonebook["Chris"] = "555-4444"
@@ -64,6 +65,7 @@ print()
 print("*****  start section 4 - delete/remove from dictionary ********")
 print()
 
+
 print(phonebook)
 del phonebook["Chris"]
 print(phonebook)
@@ -77,6 +79,7 @@ print()
 print()
 print("*****  start section 5 - iterate through keys, values, items ********")
 print()
+
 
 for key in phonebook:
     print(f"The key is: {key} and the value is {phonebook[key]}")
@@ -100,6 +103,7 @@ print()
 print("*****  start section 6 - using get and clear ********")
 print()
 
+
 name = "chris"
 
 phone = phonebook.get(name, "key not found")
@@ -121,6 +125,7 @@ print()
 print("*****  start section 7 - using pop method ********")
 print()
 
+
 remove = phonebook.pop("Chris", "not found")
 
 print(remove)
@@ -135,6 +140,7 @@ print()
 print()
 print("*****  start section 8 - using popitem ********")
 print()
+
 
 a = phonebook.popitem()
 
@@ -152,12 +158,14 @@ print()
 print("*****  start section 9 - using random and converting to list ********")
 print()
 
+
 list_of_keys = list(phonebook)
 random_key = random.choice(list_of_keys)
 print(random_key)
 print(phonebook[random_key])
 
 print(phonebook[random.choice(list(phonebook))])
+
 
 print()
 print("*****  end section 9 ********")

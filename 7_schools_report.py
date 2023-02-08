@@ -35,9 +35,8 @@ print(len(schools))
 # Displaying school reports
 for school in schools:
     if school["NCAA"]["NAIA conference number football (IC2020)"] in conference_schools:
-        print()
         if school["Graduation rate  women (DRVGR2020)"] > 80:
-            print(school["instnm"])
+            print(f"""\n{school["instnm"]}""")
             print(
                 f"""Graduation rate for women: {school["Graduation rate  women (DRVGR2020)"]}"""
             )
