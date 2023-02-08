@@ -32,21 +32,7 @@ print(type(schools))
 # How many schools are in this file?
 print(len(schools))
 
-"""
-# Iterate through the list to extract data from the dictionaries
-for school in schools:
-    num = school["NCAA"]["NAIA conference number football (IC2020)"]
-
-    for item in conference_schools:
-        if item == num:
-            print(school["instnm"])
-            print(f"Women's Graduation Rate: {school["Graduation rate  women (DRVGR2020)"]}")
-            print(f"Total Price for in-state students living off campus: {school[""]}")
-
-        if school["Graduation rate  women (DRVGR2020)"]
-
-"""
-# FINISH FINISH FINISH
+# Displaying school reports
 for school in schools:
     if school["NCAA"]["NAIA conference number football (IC2020)"] in conference_schools:
         print()
