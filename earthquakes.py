@@ -39,7 +39,6 @@ infile = open("eq_data.json", "r")
 earthquakes = json.load(infile)
 
 
-earthquakes["features"][0]["properties"]["type"]
 
 # Print the number of earthquakes
 print("--- Question 1 ---", end="\n\n")
@@ -47,6 +46,8 @@ print("--- Question 1 ---", end="\n\n")
 print(len(earthquakes["features"]))
 
 print("\n\n\n")
+
+
 
 # Create and print 'eq_dict'
 print("--- Question 2 ---", end="\n\n")
@@ -69,6 +70,8 @@ for earthquake in earthquakes["features"]:
 print(eq_dict)
 
 print("\n\n\n")
+
+
 
 # Print Earthquake Report
 print("--- Question 3 ---", end="\n\n")
